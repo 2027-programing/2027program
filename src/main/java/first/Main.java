@@ -7,18 +7,13 @@ package first;
 import org.wpilib.framework.RobotBase;
 
 /**
- * Do NOT add any static variables to this class, or any initialization at all. Unless you know what
- * you are doing, do not modify this file except to change the parameter class to the startRobot
- * call.
+ * 程式進入點。不要在這裡加任何 static 變數或初始化。
+ *
+ * <p>2027 Alpha 7 的寫法是 {@code Robot::new}（工廠函式），不是舊 Alpha 的 {@code Robot.class}。
  */
 public final class Main {
   private Main() {}
 
-  /**
-   * Main initialization function. Do not perform any initialization here.
-   *
-   * <p>If you change your main robot class, change the parameter type.
-   */
   public static void main(String... args) {
     RobotBase.startRobot(first.robot.Robot::new);
   }

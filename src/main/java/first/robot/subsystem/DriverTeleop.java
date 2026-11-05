@@ -1,4 +1,4 @@
-package first.robot.opmodes.teleop;
+package first.robot.subsystem;
 
 import org.wpilib.command3.Command;
 import org.wpilib.opmode.OpMode;
